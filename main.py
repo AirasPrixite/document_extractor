@@ -88,17 +88,18 @@ credit_note_tool = {
             "invoice_number": {"type": "string", "description": "Number of the invoice"}, 
             "issue_date_time": {"type": "string", "description": "The date and time of when the credit note was issued."}, 
             "merchant_id": {"type": "string", "description": "ID of the merchant"}, 
-            "merchant_name": {"type": "string", "description": "Name of the merchant"}, 
+            "merchant_name": {"type": "string", "description": "Name of the merchant. This would be mentioned on the invoice near the top."}, 
             "receipt_number": {"type": "string", "description": "Number of the receipt"}, 
             "remarks": {"type": "string", "description": "Any remarks added to the credit note"}, 
             "supplier_id": {"type": "string", "description": "ID of the supplier"}, 
             "supplier_name": {"type": "string", "description": "The name of the supplier"}, 
-            "total_tax_amount": {"type": "string", "description": "The total amount of tax"}
+            "total_tax_amount": {"type": "string", "description": "The total amount of tax"},
+            "product_details": {"type": "string", "description": "Details about the product which include product code, product name, quantity, unit price, discount, serial number, description, amount and currency."}
         },
         "required": ["conversion_rate", "credit_note_items", "credit_note_number", 
                      "currency_code", "document_status", "due_date", "invoice_number", "issue_date_time", 
                      "merchant_id", "merchant_name", "receipt_number", "remarks", "supplier_id", 
-                     "supplier_name", "total_tax_amount"]
+                     "supplier_name", "total_tax_amount", "product_details"]
     }
 }
 
